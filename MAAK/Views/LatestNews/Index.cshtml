@@ -1,0 +1,129 @@
+﻿@model IEnumerable<MAAK.Models.LatestNews>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Detail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Starttime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Endtime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Startdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Enddate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Place)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Organizer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_OrganizerPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_ContactPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_ContactEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_Modifier)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_ModificationTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LatestNews_ModificationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Detail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Starttime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Endtime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Startdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Enddate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Place)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Organizer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_OrganizerPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_ContactPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_ContactEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_Modifier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_ModificationTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LatestNews_ModificationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member.Member_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LatestNews_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LatestNews_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LatestNews_ID })
+        </td>
+    </tr>
+}
+
+</table>

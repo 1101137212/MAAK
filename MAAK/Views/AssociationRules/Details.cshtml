@@ -1,0 +1,66 @@
+﻿@model MAAK.Models.AssociationRule
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AssociationRule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationRule_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationRule_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationRule_Detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationRule_Detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationRule_Modifier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationRule_Modifier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationRule_ModificationTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationRule_ModificationTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationRule_ModificationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationRule_ModificationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.Member_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AssociationRule_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

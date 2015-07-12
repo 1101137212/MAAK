@@ -1,0 +1,87 @@
+﻿@model IEnumerable<MAAK.Models.Member>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>會員</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            會員名稱
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Mobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Picture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_NowPosition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Account)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Education)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Experience)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Mobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Picture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_NowPosition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Account)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Education)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_Experience)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Member_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Member_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Member_ID })
+        </td>
+    </tr>
+}
+
+</table>

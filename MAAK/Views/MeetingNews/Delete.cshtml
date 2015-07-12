@@ -1,0 +1,104 @@
+﻿@model MAAK.Models.MeetingNews
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MeetingNews</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Starttime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Starttime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Endtime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Endtime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Place)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Modifier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Modifier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_ModificationTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_ModificationTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_ModificationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_ModificationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.Member_Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

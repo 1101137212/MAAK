@@ -1,0 +1,98 @@
+﻿@model MAAK.Models.Member
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_NowPosition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_NowPosition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Account)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Account)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Education)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Education)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Experience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Experience)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Member_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,58 @@
+﻿@model MAAK.Models.AssociationHistory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AssociationHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationHistory_Detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationHistory_Detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationHistory_Modifier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationHistory_Modifier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationHistory_ModificationTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationHistory_ModificationTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssociationHistory_ModificationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssociationHistory_ModificationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.Member_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AssociationHistory_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

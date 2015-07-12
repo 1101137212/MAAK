@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MAAK.Models.AssociationRule>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationRule_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationRule_Detail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationRule_Modifier)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationRule_ModificationTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationRule_ModificationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationRule_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationRule_Detail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationRule_Modifier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationRule_ModificationTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationRule_ModificationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member.Member_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AssociationRule_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AssociationRule_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AssociationRule_ID })
+        </td>
+    </tr>
+}
+
+</table>

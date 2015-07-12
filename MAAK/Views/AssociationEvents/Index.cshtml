@@ -1,0 +1,75 @@
+﻿@model IEnumerable<MAAK.Models.AssociationEvent>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationEvent_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationEvent_Detail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationEvent_Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationEvent_Picture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationEvent_Modifier)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationEvent_ModificationTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssociationEvent_ModificationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationEvent_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationEvent_Detail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationEvent_Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationEvent_Picture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationEvent_Modifier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationEvent_ModificationTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssociationEvent_ModificationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member.Member_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AssociationEvent_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AssociationEvent_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AssociationEvent_ID })
+        </td>
+    </tr>
+}
+
+</table>

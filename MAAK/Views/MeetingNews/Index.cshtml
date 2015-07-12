@@ -1,0 +1,87 @@
+﻿@model IEnumerable<MAAK.Models.MeetingNews>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_Detail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_Starttime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_Endtime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_Place)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_Modifier)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_ModificationTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetingNews_ModificationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_Detail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_Starttime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_Endtime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_Place)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_Modifier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_ModificationTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetingNews_ModificationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member.Member_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MeetingNews_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MeetingNews_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MeetingNews_ID })
+        </td>
+    </tr>
+}
+
+</table>

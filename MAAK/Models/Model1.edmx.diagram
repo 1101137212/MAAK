@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c20fcedce3014a97a51d0ae44f3fe34f" Name="Diagram1">
+        <EntityTypeShape EntityType="MAAKModel.AssociationEvent" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.AssociationHistory" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.AssociationRule" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.Award" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.Exhibition" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.ExhibitionRecord" Width="1.5" PointX="6" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.LatestNews" Width="1.5" PointX="3" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.MediaReports" Width="1.5" PointX="3" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.MeetingAttendeeRecord" Width="1.5" PointX="6" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.MeetingNews" Width="1.5" PointX="3" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.MeetingRecord" Width="1.5" PointX="3.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.Member" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.Portfolio" Width="1.5" PointX="3" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.Position" Width="1.5" PointX="3.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.PositionRecord" Width="1.5" PointX="6" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.ResearchField" Width="1.5" PointX="6.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.ResearchFieldRecord" Width="1.5" PointX="9" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAAKModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MAAKModel.FK_AssociationEvent_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_AssociationHistory_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_AssociationRule_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_Award_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_ExhibitionRecord_Exhibition" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_ExhibitionRecord_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_LatestNews_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_MediaReports_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_MeetingAttendeeRecord_MeetingRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_MeetingAttendeeRecord_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_MeetingNews_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_Portfolio_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_PositionRecord_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_ResearchFieldRecord_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_PositionRecord_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="MAAKModel.FK_ResearchFieldRecord_ResearchField" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

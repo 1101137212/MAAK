@@ -1,0 +1,98 @@
+﻿@model MAAK.Models.MeetingNews
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MeetingNews</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Starttime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Starttime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Endtime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Endtime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Place)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_Modifier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_Modifier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_ModificationTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_ModificationTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingNews_ModificationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetingNews_ModificationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.Member_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MeetingNews_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
